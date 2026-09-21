@@ -28,6 +28,6 @@ UI-only project. No database, no API routes, no authentication. All functional t
 
 - **Separate from the admin dashboard** — The EFN site is public-facing. The dashboard is admin-facing. Keeping them separate prevents public users from encountering admin routes and lets each project evolve independently.
 - **Links out, does not embed** — Tools like the onboarding form live in the dashboard and are linked from here, not iframed or replicated. Single source of truth per tool.
-- **Tailwind v4 + shadcn/ui** — Brand tokens from `F:\Projects\Empowr CIC\brand-identity.md` are registered via `@theme` in `globals.css`, making them available as Tailwind utility classes. Heroes stays on plain CSS (legacy); this project establishes the new standard for all new Empowr CIC builds.
+- **Tailwind v4 + shadcn/ui** — Brand tokens from `~/projects/Empowr CIC/brand-identity.md` are registered via `@theme` in `globals.css`, making them available as Tailwind utility classes. Heroes stays on plain CSS (legacy); this project establishes the new standard for all new Empowr CIC builds.
 - **Programme hub design** — The homepage is not just a landing page. It is the navigation layer for the entire EFN programme. As new tools are built, they appear here as destinations.
 - **Next.js over Vite/React** — Chosen for routing flexibility and the option to add SSR or API routes later without a rewrite, at minimal extra cost on a simple site.

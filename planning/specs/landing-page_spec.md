@@ -129,7 +129,7 @@ No top navigation on launch — the page is single-scroll. Add a sticky header w
 ## Brand Application
 
 - **Font:** Nunito — import via `next/font/google` in `layout.tsx` (weights 400, 600, 800, 900); apply via `--font-nunito` CSS variable on `<html>`
-- **Colours:** exact tokens from `F:\Projects\Empowr CIC\brand-identity.md`
+- **Colours:** exact tokens from `~/projects/Empowr CIC/brand-identity.md`
 - **Implementation:** register brand tokens in `globals.css` using Tailwind v4's `@theme` directive so they become Tailwind utilities (`bg-blue`, `text-cream`, `bg-blue-pale`, etc.)
 - **Buttons:** use shadcn/ui `Button` component with a custom `brand` variant — `rounded-full`, `font-extrabold`, `shadow-blue`, transition `0.2s`
 - **Shadows:** define `--shadow-blue` and `--shadow-sm` in `@theme` and use via `shadow-blue`, `shadow-sm` Tailwind classes

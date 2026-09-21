@@ -72,7 +72,7 @@ Planned future pages (Phase 3, not started): Timesheet Portal, My Schedule, Reso
 
 - **No form handling here** — all forms live in the dashboard
 - **No hardcoded URLs** — all external links in `src/lib/links.ts`
-- **No new colours or fonts** — follow `F:\Projects\Empowr CIC\brand-identity.md` exactly
+- **No new colours or fonts** — follow `~/projects/Empowr CIC/brand-identity.md` exactly
 - **No nav on launch** — nav will be added once there are 3+ tool destinations
 
 ---
