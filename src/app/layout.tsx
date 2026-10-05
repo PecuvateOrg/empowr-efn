@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
+import PostHogProvider from "@/components/PostHogProvider";
 
 const nunito = Nunito({
   variable: "--font-sans",
@@ -78,7 +79,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <PostHogProvider>{children}</PostHogProvider>
+      </body>
     </html>
   );
 }
