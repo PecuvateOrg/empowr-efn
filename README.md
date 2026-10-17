@@ -1,4 +1,15 @@
-# empowr-efn
+# Empowr Freelancer Network
+
+## About
+
+### What it is
+The public home of the Empowr Freelancer Network (EFN), at efn.empowrcic.org.
+
+### What it's for
+To explain how freelancers — coaches and other professionals — join and work with Empowr CIC, and get them started.
+
+### How it works
+A simple site introducing the network. "Join the Network" takes freelancers into onboarding on the EFN dashboard, where the rest of the process happens.
 
 Public-facing hub for the Empowr Freelancer Network (`efn.empowrcic.org`).
 
