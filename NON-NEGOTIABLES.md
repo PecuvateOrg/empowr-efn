@@ -11,7 +11,7 @@ project.
   `../../workspace-docs/empowr-efn/` in the private Empowr CIC hub instead.
 - Never put live identifiers, unremediated security findings, or commercial state in any file
   tracked here. See `../../CONTEXT.md` and `_config/guides/public-repo-collaboration.md`.
-- Brand must match `~/projects/Empowr CIC/brand-identity.md` exactly — no new colours or fonts
+- Brand must match `~/projects/Empowr CIC/company/identity/brand-guide.md` exactly — no new colours or fonts
 - Tailwind CSS v4 + shadcn/ui — brand tokens registered via `@theme` in `globals.css`; see `~/projects/_config/guides/styling.md` for the pattern
 - Primary CTA "Join the Network" links to `https://efn-dashboard.empowrcic.org/onboard`
 - No back-end logic in this project — UI-only hub; API routes belong in the dashboard
