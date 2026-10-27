@@ -30,7 +30,7 @@ folder's CONTEXT.md.
 ## Cross-Workspace Flows
 
 - **Onboarding CTA** — "Join the Network" links to `https://efn-dashboard.empowrcic.org/onboard`; any onboarding flow changes require coordination with Freelancer-Workflow project
-- **Brand tokens** — source of truth is `~/projects/Empowr CIC/brand-identity.md`; update there first, then propagate to `src/app/globals.css`
+- **Brand tokens** — source of truth is `~/projects/Empowr CIC/company/identity/brand-guide.md`; update there first, then propagate to `src/app/globals.css`
 - **Deploy** — push to `main` → Netlify auto-deploys; no manual deploy step needed
 
 ---

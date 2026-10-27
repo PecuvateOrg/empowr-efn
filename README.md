@@ -61,7 +61,7 @@ empowr-efn/
 
 ## Brand
 
-Brand tokens live at `~/projects/Empowr CIC/brand-identity.md`. The `globals.css` in this project copies the root token block from `empowr-heroes-nextjs/src/app/globals.css` and applies them identically.
+Brand tokens live at `~/projects/Empowr CIC/company/identity/brand-guide.md`. The `globals.css` in this project copies the root token block from `empowr-heroes-nextjs/src/app/globals.css` and applies them identically.
 
 ---
 
