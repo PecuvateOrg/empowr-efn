@@ -21,6 +21,7 @@ folder's CONTEXT.md.
 
 | Task | Workspace | Read first |
 |---|---|---|
+| **Design: look, colours, components** | `design-system/` | `design-system/MASTER.md` (then the Empowr brand kit it names) |
 | Landing page or any page build | `planning/specs/` | relevant spec in `planning/specs/` |
 | Deployment or DNS | `ops/` | `ops/CONTEXT.md` |
 | Architectural decisions | `planning/decisions/` | relevant decision record |
