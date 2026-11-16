@@ -14,7 +14,7 @@ const faqs: { question: string; answer: React.ReactNode }[] = [
   {
     question: "Where do I log my hours?",
     answer:
-      "In Sling. The admin team will walk you through this when your profile is set up.",
+      "In the freelancer portal at efn-dashboard.empowrcic.org/portal. Sign in with your email and log the hours against the task.",
   },
   {
     question: "When will I be paid?",
