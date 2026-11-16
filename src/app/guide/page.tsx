@@ -41,7 +41,7 @@ const paymentSteps = [
   },
   {
     title: "Timesheet approval",
-    body: "The admin team reviews and approves your hours in the dashboard. Once approved, you will receive a confirmation email with a summary of hours, your agreed rate, and the total amount due.",
+    body: "The admin team reviews and approves your hours in the dashboard. Once approved, you will receive a confirmation email showing the task and the hours approved. Payment is at your agreed rate.",
     callout: {
       variant: "warning" as const,
       text: "This is your chance to flag any discrepancies. Reply immediately if anything looks incorrect — once the invoice is raised it is harder to amend.",
