@@ -100,7 +100,6 @@ To update any link, edit `src/lib/links.ts` and redeploy. Never hardcode URLs in
 |---|---|---|
 | **dashboard.empowrcic.org** | Freelancer onboarding form — all CTAs point here | Outbound link |
 | **LegalHub** (`legalhub.pecuvate.com`) | T&Cs + Privacy Policy — served via Netlify redirect | Inbound redirect target |
-| **Sling** | Scheduling platform — mentioned in guide copy, not embedded | Reference only |
 | **AWS S3** | Empowr logo (`empowr-cic.s3.us-east-1.amazonaws.com`) | Remote image pattern |
 | **Netlify** | Hosting — auto-deploy on push to main | Infrastructure |
 | **GitHub** (`PecuvateOrg/empowr-efn`) | Source — Netlify pulls on push | Infrastructure |
@@ -179,7 +178,7 @@ When the EFN programme grows, new tool destinations will be added to `ToolsHub.t
 ToolsHub (currently coming-soon cards)
     │  Phase 3: activate cards as tools ship
     ├── Timesheet Portal    → tbd.empowrcic.org or /timesheet
-    ├── My Schedule         → tbd.empowrcic.org or Sling-linked
+    ├── My Schedule         → efn-dashboard.empowrcic.org/portal
     └── Resource Hub        → tbd.empowrcic.org or /resources
 ```
 

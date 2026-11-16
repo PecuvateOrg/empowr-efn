@@ -54,7 +54,6 @@ Planned future pages (Phase 3, not started): Timesheet Portal, My Schedule, Reso
 
 ## Outstanding
 
-- Confirm exact Sling management process with team → expand copy on home/guide if needed
 
 ---
 
@@ -62,7 +61,7 @@ Planned future pages (Phase 3, not started): Timesheet Portal, My Schedule, Reso
 
 | Project | Relation |
 |---|---|
-| Freelancer-Workflow | Backend automation (Notion, Xero, BoldSign, Sling) — this site is the public face |
+| Freelancer-Workflow | Backend automation (tasks + freelancer portal, Notion, Xero) — this site is the public face |
 | dashboard.empowrcic.org | Onboarding form — `/` and `/guide` both CTA here |
 | LegalHub (`legalhub.pecuvate.com`) | T&Cs + Privacy Policy — served via `/legal/*` Netlify redirect |
 
