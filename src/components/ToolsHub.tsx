@@ -5,7 +5,7 @@ const comingSoon = [
   },
   {
     title: "My Schedule",
-    description: "View your upcoming shifts via Sling",
+    description: "See your upcoming tasks in the freelancer portal",
   },
   {
     title: "Resource Hub",

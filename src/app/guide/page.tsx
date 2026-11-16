@@ -26,22 +26,22 @@ const joiningSteps = [
   },
   {
     title: "Your profile is set up",
-    body: "Once your agreement is signed, we will set up your profile on Sling — our scheduling platform. You will receive a welcome email with instructions on how to get started. A contact record will also be created for you in our billing system.",
+    body: "Once your agreement is signed, you will receive a welcome email asking for your tax and bank details. When you have completed them, your profile is set up and a contact record is created for you in our billing system.",
   },
   {
     title: "You're ready to work",
-    body: "Once your profile is active, our admin team will be in touch via Sling to schedule your first assignment.",
+    body: "Once your profile is active, we will email you when a task is assigned. You can see all your tasks in the freelancer portal at efn-dashboard.empowrcic.org/portal.",
   },
 ];
 
 const paymentSteps = [
   {
     title: "Log your hours",
-    body: "After completing an assignment, log your hours in Sling as soon as possible. Include the date(s) worked, role, and total hours.",
+    body: "After completing an assignment, sign in to the freelancer portal and log your hours against the task as soon as possible.",
   },
   {
     title: "Timesheet approval",
-    body: "The admin team reviews and approves your timesheet in Sling. Once approved, you will receive a confirmation email with a summary of hours, your agreed rate, and the total amount due.",
+    body: "The admin team reviews and approves your hours in the dashboard. Once approved, you will receive a confirmation email with a summary of hours, your agreed rate, and the total amount due.",
     callout: {
       variant: "warning" as const,
       text: "This is your chance to flag any discrepancies. Reply immediately if anything looks incorrect — once the invoice is raised it is harder to amend.",

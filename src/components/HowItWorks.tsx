@@ -11,13 +11,13 @@ const steps = [
   },
   {
     number: 3,
-    title: "Join Sling",
-    body: "Once signed, you'll receive a Sling invite — our scheduling platform. Join with one click.",
+    title: "Complete your details",
+    body: "Once signed, you'll get an email asking for your tax and bank details so we can pay you.",
   },
   {
     number: 4,
     title: "Start working",
-    body: "Our admin team will reach out via Sling to schedule your first assignment.",
+    body: "Your tasks appear in the freelancer portal, and we email you when a new one is assigned.",
   },
 ];
 
