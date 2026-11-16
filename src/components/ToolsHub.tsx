@@ -1,12 +1,6 @@
+import { links } from "@/lib/links";
+
 const comingSoon = [
-  {
-    title: "Timesheet Portal",
-    description: "Submit and track your timesheets",
-  },
-  {
-    title: "My Schedule",
-    description: "See your upcoming tasks in the freelancer portal",
-  },
   {
     title: "Resource Hub",
     description: "Guides, policies, and programme information",
@@ -17,16 +11,23 @@ export default function ToolsHub() {
   return (
     <section className="bg-card py-20 px-6">
       <div className="mx-auto max-w-[880px]">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <h2 className="text-3xl font-black text-black">EFN Tools</h2>
-          <span className="rounded-full border border-border px-3 py-1 text-xs font-semibold text-muted-foreground">
-            Coming soon
-          </span>
-        </div>
+        <h2 className="text-3xl font-black text-black text-center mb-4">EFN Tools</h2>
         <p className="text-center text-muted-foreground mb-12">
           Tools to support you on your Empowr Freelancer journey.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <a
+            href={links.portal}
+            className="group bg-white rounded-[14px] border-2 border-blue p-8 flex flex-col gap-2 transition-all duration-200 hover:shadow-blue"
+          >
+            <h3 className="text-base font-extrabold text-black">Freelancer Portal</h3>
+            <p className="text-sm text-muted-foreground">
+              See your tasks and log your hours. Sign in with the email you joined with.
+            </p>
+            <span className="text-sm font-extrabold text-blue mt-1 group-hover:underline">
+              Open the portal →
+            </span>
+          </a>
           {comingSoon.map((tool) => (
             <div
               key={tool.title}
