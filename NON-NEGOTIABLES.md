@@ -1,6 +1,6 @@
 # empowr-efn — Non-Negotiables
 
-Forced open by `CLAUDE.md`'s Self-Reference line — read before doing anything else in this
+Named first in `AGENTS.md` — read before doing anything else in this
 project.
 
 ## Rules
