@@ -1,11 +1,72 @@
-# Empowr EFN Agent Instructions
+# empowr-efn — Claude Code Rules
 
-Read `CLAUDE.md` first. It is the canonical MWP Layer 0 file for this project and contains routing, project-wide rules, deployment metadata, and token-management guidance.
+> Workspace rules: this project sits inside `~/projects`. Before working, read `~/projects/NON-NEGOTIABLES.md` and the hub's `NON-NEGOTIABLES.md` if there is one. Tools that stop at the repository root (Antigravity) won't load them by themselves.
 
-Then read `CONTEXT.md` when relevant to the task.
+> **This repository is PUBLIC** (`PecuvateOrg/empowr-efn`).
+>
+> **Devlog and memory location:** `../../workspace-docs/empowr-efn/`
+>
+> `DEVLOG.md` and `memory.md` are not kept in this repo — write session entries to the path
+> above instead. See `NON-NEGOTIABLES.md` for what must never be committed here.
 
-This repo is **public**. Its `memory.md` and `DEVLOG.md` are not kept here — they live in
-the private Empowr CIC hub at `../../workspace-docs/empowr-efn/`. Read and write them there.
-Never recreate either file in this repo; both are gitignored and would be silently lost.
+## Identity
+`efn.empowrcic.org` — the Empowr Freelancer Network programme hub. Lightweight Next.js site; introduces the EFN and links out to admin tools built in separate projects.
 
-Agent role definitions live in `agent-roles.md`.
+## Self-Reference
+Inherits from `~/projects/Empowr CIC/AGENTS.md` and `~/projects/AGENTS.md`. This file (`AGENTS.md`, imported by `CLAUDE.md`) is Layer 0
+— routing only. Read `NON-NEGOTIABLES.md` before doing anything; project detail lives in each
+folder's CONTEXT.md.
+
+---
+
+## Routing
+
+| Task | Workspace | Read first |
+|---|---|---|
+| **Design: look, colours, components** | `design-system/` | `design-system/MASTER.md` (then the Empowr brand kit it names) |
+| Landing page or any page build | `planning/specs/` | relevant spec in `planning/specs/` |
+| Deployment or DNS | `ops/` | `ops/CONTEXT.md` |
+| Architectural decisions | `planning/decisions/` | relevant decision record |
+
+---
+
+## Cross-Workspace Flows
+
+- **Onboarding CTA** — "Join the Network" links to `https://efn-dashboard.empowrcic.org/onboard`; any onboarding flow changes require coordination with Freelancer-Workflow project
+- **Brand tokens** — source of truth is `~/projects/Empowr CIC/company/identity/brand-guide.md`; update there first, then propagate to `src/app/globals.css`
+- **Deploy** — push to `main` → Netlify auto-deploys; no manual deploy step needed
+
+---
+
+## File Placement
+
+| File type | Goes in |
+|---|---|
+| Feature specs | `planning/specs/` |
+| Architectural decision records | `planning/decisions/` |
+| Deployment and DNS scripts | `ops/scripts/` |
+| Shared CSS tokens | `src/app/globals.css` |
+| Reusable UI components | `src/components/` |
+| Page files | `src/app/` (Next.js App Router) |
+
+---
+
+## Token Management
+
+Do NOT load unless the task requires it:
+- `planning/decisions/` — only when reviewing or recording architectural decisions
+- `docs/` — only when task involves integration documentation
+- `ops/` — only when deploying or running scripts
+
+---
+
+## Skills and Tools Available
+
+| Tool / Skill | Trigger | Purpose |
+|---|---|---|
+| `/netlify-deploy` | going live or redeploying | Deploy to Netlify and configure `efn.empowrcic.org` |
+| `/netlify-supabase-check` | before any deploy | Pre-deploy audit — Netlify + Supabase integration |
+| `/pre-build-check` | before any deploy | Validate build structure and frontend quality |
+| `/pre-deploy-security` | before any deploy | FAILs block the deploy |
+| `/webapp-testing` | after frontend changes | Test UI with Playwright |
+| `/simplify` | after a feature is built | Review changed code for reuse, quality, and efficiency |
